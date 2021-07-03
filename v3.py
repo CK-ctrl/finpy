@@ -17,7 +17,7 @@ print(df.head())
 
 
 ax1 = plt.subplot2grid((6,1),(0,0), rowspan=5, colspan=1)
-ax1 = plt.subplot2grid((6,1),(0,0), rowspan=1, colspan=1, sharex=ax1) #sharex=x2 will make x2 common between both graps.
+ax1 = plt.subplot2grid((6,1),(0,0), rowspan=1, colspan=1, sharex=ax1) #sharex=x2 will make x2 common between both graps
 
 ax1.plot(df.index, df['Adj Close'])
 ax1.plot(df.index, df['100ma'])
